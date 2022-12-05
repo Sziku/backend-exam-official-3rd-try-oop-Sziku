@@ -4,15 +4,20 @@ public abstract class Worker {
     private int experience;
     private boolean isBored;
      public void doWork(boolean isBoring){
-         if(!isBoring){
-             experience += 2;
-         }else {
-             experience += 1;
+         if(!this.isBored){
+             if(!isBoring){
+                 experience += 2;
+             }else {
+                 experience += 1;
+                 isBored = true;
+             }
          }
+
      };
 
     public Worker(int experience) {
         this.experience = experience;
+        isBored = false;
     }
 
     public int getExperience() {

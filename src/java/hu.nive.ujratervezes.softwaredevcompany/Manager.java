@@ -6,7 +6,7 @@ public class Manager extends Worker{
     }
 
     public void motivateWorker(Worker worker){
-        worker.setExperience(worker.getExperience() + 1);
+        this.setExperience(this.getExperience() + 1);
         worker.setBored(false);
     }
 }

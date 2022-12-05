@@ -7,7 +7,7 @@ public class Developer extends Worker{
 
 
 
-    void doPairProgramming(Developer otherDeveloper){
+    public void doPairProgramming(Developer otherDeveloper){
         this.setExperience(this.getExperience() +1);
         otherDeveloper.setExperience(otherDeveloper.getExperience() + 1);
     }
