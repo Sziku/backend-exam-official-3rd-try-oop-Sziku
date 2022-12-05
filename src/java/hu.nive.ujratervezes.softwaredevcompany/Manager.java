@@ -5,8 +5,8 @@ public class Manager extends Worker{
         super(experience);
     }
 
-    @Override
-    void doWork(boolean isBoring) {
-
+    public void motivateWorker(Worker worker){
+        worker.setExperience(worker.getExperience() + 1);
+        worker.setBored(false);
     }
 }
