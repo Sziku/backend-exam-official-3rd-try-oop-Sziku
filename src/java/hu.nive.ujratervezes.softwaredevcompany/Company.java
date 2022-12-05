@@ -1,3 +1,5 @@
+package hu.nive.ujratervezes.softwaredevcompany;
+
 import java.util.List;
 
 public class Company {
